@@ -70,5 +70,7 @@ Enter the second number : 243.87
 # Assignment 3 
 # what are r+,w+,a+ operations
 # r+ : Opens a file for reading and writing.
+
 # w+ : Opens a file for writing and reading.
+
 # a+ : Opens a file for both appending and reading.
