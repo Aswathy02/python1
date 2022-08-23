@@ -1,0 +1,74 @@
+# Assignment 1
+# Comparison operators-> ==,>,<,>=,<=,!=  and Assignment operator-> =
+x={"A","B","C","D"}
+y={"C","D"}
+print(x)
+print(y)
+print("x==y is",x==y)
+print("x>y is",x>y)
+print("x<y is",x<y)
+print("x!=y is",x!=y)
+print("x<=y is",x<=y)
+print("x>=y is",x>=y)
+print()
+x=y
+print(x)
+
+
+{'D', 'A', 'B', 'C'}
+{'D', 'C'}
+x==y is False
+x>y is True
+x<y is False
+x!=y is True
+x<=y is False
+x>=y is True
+
+{'D', 'C'}
+
+
+
+# Assignment 2 
+# create a function which gets two user inputs as operands and the operation to be performed on them as user input as well and do the calculation.
+print("Choices")
+print("  1 - Addition")
+print("  2 - Subtraction")
+print("  3 - Multiplication")
+print("  4 - Division")
+
+x=input("Enter the choice : ")
+num1 = float(input("Enter the first number : "))
+num2 = float(input("Enter the second number : "))
+
+if x=="1":
+  print(num1 , "+" , num2 , "=" , (num1+num2))
+elif x=="2":
+  print(num1 , "-" , num2 , "=" , (num1-num2))
+elif x=="3":
+  print(num1 , "*" , num2 , "=" , (num1*num2))
+elif x=="4":
+  if num2 == 0.0:
+    print("Division by zero error")
+  else:
+    print(num1 , "/" , num2 , "=" , (num1/num2)) 
+else:
+  print("invalid Choice")
+  
+  
+  Choices
+  1 - Addition
+  2 - Subtraction
+  3 - Multiplication
+  4 - Division
+Enter the choice : 2
+Enter the first number : 345.43
+Enter the second number : 243.87
+345.43 - 243.87 = 101.56
+
+
+
+# Assignment 3 
+# what are r+,w+,a+ operations
+# r+ : Opens a file for reading and writing.
+# w+ : Opens a file for writing and reading.
+# a+ : Opens a file for both appending and reading.
