@@ -70,7 +70,115 @@ Enter the second number : 243.87
 # Assignment 3 
 # what are r+,w+,a+ operations
 # r+ : Opens a file for reading and writing.
-
 # w+ : Opens a file for writing and reading.
-
 # a+ : Opens a file for both appending and reading.
+x=open("file.txt","r")
+print(x.read())
+
+welcome to python 1
+welcome to python 2
+welcome to python 3
+welcome to python 4
+
+x=open('file.txt', 'r+')
+print(x.write("new line \n"))
+x=open('file.txt', 'r+')
+print(x.read())
+
+10
+new line 
+ python 1
+welcome to python 2
+welcome to python 3
+welcome to python 4
+
+x=open('file.txt', 'w+')
+x.write("test 1\n")
+x.write("test 2\n")
+x.write("test 3\n")
+x=open('file.txt', 'w+')
+print(x.read()) 
+
+test 1
+test 2
+test 3
+
+x=open('file.txt', 'a+')
+x.write("\n all are completed")
+x=open('file.txt', 'a+')
+print(x.read())
+
+test 1
+test 2
+test 3
+
+ all are completed
+ all are completed
+ all are completed
+
+
+# Assignment 4
+# how can we print datas in ascenting or descending order 
+nums=[1,3,2,5,6,45,26,15,87,100]
+nums.sort()
+print("list in ascending order: ",nums)
+for a in nums:
+  print(a)
+
+nums.sort(reverse=True)
+print("list in descending order: ",nums)
+for x in nums:
+  print(x)
+  
+  
+  list in ascending order:  [1, 2, 3, 5, 6, 15, 26, 45, 87, 100]
+1
+2
+3
+5
+6
+15
+26
+45
+87
+100
+list in descending order:  [100, 87, 45, 26, 15, 6, 5, 3, 2, 1]
+100
+87
+45
+26
+15
+6
+5
+3
+2
+1
+
+
+
+# Assignment 5
+# create an example of * and **
+def sums(*args):
+  return sum(args)
+print(sums(1,2,3,4))
+print(sums(1,2,5,7,8,947))
+
+def fun(name,*args):
+  print(name)
+  print(args)
+fun("anu",57,65,34,45,63,42)
+
+def col(game,*score,**total):
+  print(game)
+  print(score)
+  print(total)
+col("football",3,2,0,1,team1=1,team2=1,team3=0,team4=0)
+
+
+10
+970
+anu
+(57, 65, 34, 45, 63, 42)
+football
+(3, 2, 0, 1)
+{'team1': 1, 'team2': 1, 'team3': 0, 'team4': 0}
