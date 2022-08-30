@@ -356,3 +356,42 @@ for table in multiply:
 72
 81
 90
+
+
+
+#Assignment -7
+# create an example of generator
+def generator():
+  yield "Welcome"
+  yield "to"
+  yield "my"
+  yield "WORLD"
+a = generator()
+print(type(a))
+for x in a:
+  print(x) 
+
+def odd(number):
+  for no in range(number):
+    if(no%2!=0):
+      yield no
+odd_number=odd(20)
+print(list(odd_number))
+
+def even(number):
+  for no in range(number):
+    if(no%2==0):
+      yield no
+even_number=even(20)
+print(list(even_number))
+
+
+<class 'generator'>
+Welcome
+to
+my
+WORLD
+
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
