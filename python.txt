@@ -395,3 +395,49 @@ WORLD
 [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+
+#Assignment-8
+# create example of encapsulation and polimorphism
+#Encapsulation
+class attendence():
+  def __init__(s,name,nickname):
+    s.name=name
+    s.nickname=nickname
+  def privateacces(s):
+    print(s.__nickname)
+
+obj=attendence("Tom","Tutu")
+print(obj.name)
+print(obj.nickname)
+
+
+Tom
+Tutu
+
+#polymorphism
+class numbers():
+  def intro(self):
+    print("Numbers are a quantity or amount")
+  def feature(self):
+    print("Not all numbers are whole numbers")
+class float(numbers):
+  def feature(self):
+    print("float numbers are not whole numbers")
+class integer(numbers):
+  def feature(self):
+    print("integer is a whole number")
+
+num=numbers()
+flt=float()
+int=integer()
+
+num.feature()
+flt.feature()
+int.feature()
+
+
+Not all numbers are whole numbers
+float numbers are not whole numbers
+integer is a whole number
